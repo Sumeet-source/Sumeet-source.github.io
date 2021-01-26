@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)https://www.vectorstock.com/royalty-free-vector/restaurant-logo-template-mr-food-logo-vector-23204186 -->
+<html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./logo_files/recaptcha__en_gb.js.download" crossorigin="anonymous" integrity="sha384-bjxKXKqtdg6S0iC3B/XdxExHRPXtpAeTkkkJAzZ/semsd9UkWQDyzCV8A+ggQFY8"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="csrf-name" content="csrf600d12cb78c62">
+	<meta name="csrf-value" content="a852a5949a06200ec63a53e8b4726322">
+	<script type="text/javascript" src="./logo_files/02e09611df"></script><script src="./logo_files/nr-1194.min.js.download"></script><script type="text/javascript" async="" src="./logo_files/linkid.js.download"></script><script async="" src="./logo_files/analytics.js.download"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"02e09611df",applicationID:"156179534"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1194.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+	<meta name="cart-hash" content="d751713988987e9331980363e24189ce">
+	<meta name="twitter:site" content="@VectorStock">
+	<meta property="og:site_name" content="VectorStock">
+	<meta property="fb:app_id" content="241100862642313">
+	
+	<link rel="dns-prefetch" href="https://cdn.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn1.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn2.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn3.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn4.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn5.vectorstock.com/">
+	<link rel="shortcut icon" href="https://cdn.vectorstock.com/img/icons/favicon.ico" type="image/x-icon">
+	<link rel="search" type="application/opensearchdescription+xml" title="VectorStock Search" href="https://www.vectorstock.com/xml/searchbox.xml">
+
+	<title>Restaurant logo template mr food logo Royalty Free Vector</title>
+	<meta name="description" content="Restaurant logo template, mr food logo. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions..">
+	
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.vectorstock.com/royalty-free-vector/restaurant-logo-template-mr-food-logo-vector-23204186">
+	<meta property="og:title" content="Restaurant logo template mr food logo vector image on VectorStock">
+	<meta property="og:description" content="Restaurant logo template, mr food logo. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions.">
+	<meta property="og:image" content="https://cdn2.vectorstock.com/i/1000x1000/41/86/restaurant-logo-template-mr-food-logo-vector-23204186.jpg">
+	<meta property="og:image:url" content="https://cdn2.vectorstock.com/i/1000x1000/41/86/restaurant-logo-template-mr-food-logo-vector-23204186.jpg">
+	<meta property="og:image:secure_url" content="https://cdn2.vectorstock.com/i/1000x1000/41/86/restaurant-logo-template-mr-food-logo-vector-23204186.jpg">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="1000">
+	<meta property="og:image:height" content="1000">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://www.vectorstock.com/royalty-free-vector/restaurant-logo-template-mr-food-logo-vector-23204186">
+	<meta name="twitter:title" content="Restaurant logo template mr food logo vector image">
+	<meta name="twitter:description" content="Restaurant logo template, mr food logo">
+	<meta name="twitter:image" content="https://cdn2.vectorstock.com/i/thumb-large/41/86/restaurant-logo-template-mr-food-logo-vector-23204186.jpg">
+	<meta name="twitter:image:width" content="238">
+	<meta name="twitter:image:height" content="250">
+
+	<link rel="canonical" href="https://www.vectorstock.com/royalty-free-vector/restaurant-logo-template-mr-food-logo-vector-23204186">
+
+	<link rel="stylesheet" href="./logo_files/common1608259776.min.css">
+	<link rel="stylesheet" href="./logo_files/vector1608259776.min.css">
+	<script src="./logo_files/common1611198629.min.js.download"></script>
+	<script src="./logo_files/vector1611198629.min.js.download"></script>
+<!-- Analytics --><script type="text/javascript">// Load GA script
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+// Setup
+ga('create', 'UA-2180430-2', 'none');
+ga('require', 'linkid', 'linkid.js');
+ga('send', 'pageview');
+
+</script>
+<script src="./logo_files/pptm.js.download" id="xo-pptm" async=""></script><script type="text/javascript" async="" src="./logo_files/muse.js.download"></script><script src="./logo_files/fb.js.download" id="undefined" async=""></script><style type="text/css">
+.gpay-button {
+  background-origin: content-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0px;
+  border-radius: 4px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 1px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+  height: 40px;
+  min-height: 40px;
+  padding: 11px 24px;
+}
+
+.gpay-button.black {
+  background-color: #000;
+  box-shadow: none;
+  padding: 12px 24px 10px;
+}
+
+.gpay-button.white {
+  background-color: #fff;
+}
+
+.gpay-button.short, .gpay-button.plain {
+  min-width: 90px;
+  width: 160px;
+}
+
+.gpay-button.black.short, .gpay-button.black.plain {
+  background-image: url(https://www.gstatic.com/instantbuy/svg/dark_gpay.svg);
+}
+
+.gpay-button.white.short, .gpay-button.white.plain {
+  background-image: url(https://www.gstatic.com/instantbuy/svg/light_gpay.svg);
+}
+
+.gpay-button.black.active {
+  background-color: #5f6368;
+}
+
+.gpay-button.black.hover {
+  background-color: #3c4043;
+}
+
+.gpay-button.white.active {
+  background-color: #fff;
+}
+
+.gpay-button.white.focus {
+  box-shadow: #e8e8e8 0 1px 1px 0, #e8e8e8 0 1px 3px;
+}
+
+.gpay-button.white.hover {
+  background-color: #f8f8f8;
+}
+
+.gpay-button-fill, .gpay-button-fill > .gpay-button.white, .gpay-button-fill > .gpay-button.black {
+  width: 100%;
+  height: inherit;
+}
+
+.gpay-button-fill > .gpay-button.white,
+  .gpay-button-fill > .gpay-button.black {
+    padding: 11px 15%;
+}
+
+</style><style type="text/css">
+    .gpay-button.long, .gpay-button.buy {
+      min-width: 152px;
+      width: 240px;
+    }
+
+    .gpay-button.donate {
+      min-width: 177px;
+      width: 240px;
+    }
+
+    .gpay-button.white.long, .gpay-button.white.buy {
+      background-image: url(https://www.gstatic.com/instantbuy/svg/light/en.svg);
+    }
+
+    .gpay-button.black.long, .gpay-button.black.buy {
+      background-image: url(https://www.gstatic.com/instantbuy/svg/dark/en.svg);
+    }
+
+    .gpay-button.white.donate {
+      background-image: url(https://www.gstatic.com/instantbuy/svg/light/donate/en.svg);
+    }
+
+    .gpay-button.black.donate {
+      background-image: url(https://www.gstatic.com/instantbuy/svg/dark/donate/en.svg);
+    }</style></head>
+<body>
+
+<!-- Top header -->
+<header>
+	<nav class="top">
+		<figure>
+			<a href="https://www.vectorstock.com/" title="VectorStock®">VectorStock®</a>
+		</figure>
+
+		<div class="grid">
+			<form id="searchbox" class="empty">
+				<div class="wrap">
+					<fieldset>
+						<div class="contents">
+							<div class="tags">
+								<ul></ul>
+							</div>
+							<div class="input">
+								<input type="text" name="input" autocomplete="off" autocapitalize="none" spellcheck="true" value="" placeholder="Search…" maxlength="50" autofocus="">
+								<button type="button" data-action="clear">×</button>
+							</div>
+
+							<input type="hidden" name="category" value="">
+							<input type="hidden" name="custom_srp" value="">
+							<input type="hidden" name="artist" value="">
+							<input type="hidden" name="similar" value="">
+						</div>
+					<div class="suggestions"><div></div></div></fieldset>
+
+					<button type="submit">
+						<span class="icon">Search</span>
+					</button>
+				</div>
+			</form>
+			<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors">All Vectors</a></li>
+					<li><a href="https://www.vectorstock.com/free-vectors">Free Vectors</a></li>
+				</ul>
+		</div>
+
+		<div class="aside">
+			<ul>
+				<li><a href="https://www.vectorstock.com/popular-categories" title="Popular Categories">Categories</a></li>
+				<li><a href="https://www.vectorstock.com/pricing" title="Pricing">Pricing</a></li>
+				<li class="account">
+					<button type="button" data-action="signup">Sign Up</button>
+					<button type="button" data-action="login">Login</button>
+				</li>
+			</ul>
+		</div>
+
+		<div id="mobilenav-icon">
+			<span></span><span></span><span></span><span></span>
+		</div>
+	</nav>
+
+	<!-- Submenu -->
+		<nav id="searchrelated"></nav>	
+
+		<!-- Mobile menu -->
+	<div id="mobilenav-menu">
+		<div>
+			<div class="group">
+				<h4>Browse</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors">All Vectors</a></li>
+					<li><a href="https://www.vectorstock.com/free-vectors">Free Vectors</a></li>
+				</ul>
+			</div>
+			<div class="group">
+				<h4>Account</h4>
+				<ul>
+					<li class="account">
+							<ul>
+								<li><a href="https://www.vectorstock.com/signup">Sign Up</a></li>
+								<li data-action="login"><a href="https://www.vectorstock.com/?login=1">Login…</a></li>
+								<li><a href="https://www.vectorstock.com/pricing">Pricing</a></li>
+							</ul>
+						</li>
+				</ul>
+				<form method="get" action="https://www.vectorstock.com/auth/logout" class="logout">
+					<input type="hidden" name="logout" value="1">
+				</form>
+			</div>
+			<div class="group">
+				<h4>Help</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/faq"><abbr title="Frequently Asked Questions">FAQs</abbr></a></li>
+					<li><a href="https://www.vectorstock.com/contact">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<!-- Account Menu Tabs -->
+		<aside id="nav_sidebar" class="tabs tabsDark">
+
+			<nav>
+				<ul role="tablist">
+					<li data-tab-id="signup" class=""><span role="tab"><span>Sign Up</span></span></li>
+					<li data-tab-id="login" class="selected"><span role="tab"><span>Log In</span></span></li>
+				</ul>
+			</nav>
+
+			<section id="sb_signup" data-tab-id="signup" class="">
+				<div class="primary">
+					<p>New to VectorStock?</p>
+					<p><em>We're the largest royalty-free, vector-only stock agency in the world.</em></p>
+					<p>Every week we add new premium graphics by the thousands.</p>
+				</div>
+				<div class="secondary">
+					<p>Whether you're a global ad&nbsp;agency or a freelance graphic designer, we have the vector graphics to make your project come to life.</p>
+					<p>Buy Vectors, sell Vectors or both. <a href="https://www.vectorstock.com/signup">Sign up now, it’s free.</a></p>
+				</div>
+				<div class="footer">
+					<button class="master">
+						<span class="title">Sign Up...</span>
+						<span class="value">
+							<span class="symbol signup"></span>
+						</span>
+					</button>
+				</div>
+			</section>
+
+			<section id="sb_login" data-tab-id="login" class="selected">
+				<form action="https://www.vectorstock.com/auth/login" method="post">
+
+
+					<fieldset class="">
+						<label for="vs_username">Email / Username</label>
+						<div class="textfield">
+							<input type="text" id="vs_username" name="vs_username" value="" autocomplete="on" tabindex="1">
+						</div>
+					</fieldset>
+					<fieldset class="">
+						<label for="vs_password">Password</label>
+						<button type="button" class="forgot">Forgot Password</button>
+						<div class="textfield">
+							<input type="password" id="vs_password" name="vs_password" value="" autocomplete="on" tabindex="2" maxlength="72">
+						</div>
+					</fieldset>
+					<fieldset>
+						<div class="checkbox checked">
+							<label class="selected" for="vs_remember">
+								<span class="title">Stay Logged In</span>
+								<span class="icon"></span>
+								<input type="checkbox" id="vs_remember" name="vs_remember" value="yes" tabindex="3" checked="">
+							</label>
+						</div>
+					</fieldset>
+
+
+					<button type="submit" tabindex="4">Log In</button>
+				</form>
+				<div class="alternatives">
+					<h6>Or Login With</h6>
+					<ul>
+						<li class="gp"><a href="https://www.vectorstock.com/">
+							<span class="title">Google</span>
+							<span class="icon"></span>
+						</a></li>
+						<li class="fb"><a href="https://www.vectorstock.com/">
+							<span class="title">Facebook</span>
+							<span class="icon"></span>
+						</a></li>
+					</ul>
+				</div>
+
+				
+			</section>
+		</aside>
+
+	<!-- Page -->
+	<article>
+		<section id="vs-asset" style="min-height: 708px; max-width: 562px;">
+
+			<!-- Aside -->
+			<div class="aside">
+				<ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemtype="http://schema.org/Thing" itemprop="item" href="https://www.vectorstock.com/royalty-free-vectors">
+							<span itemprop="name">Royalty Free Vectors</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemtype="http://schema.org/Thing" itemprop="item" href="https://www.vectorstock.com/royalty-free-vectors/restaurant-vectors">
+							<span itemprop="name">Restaurant Vectors</span>
+						</a>
+						<meta itemprop="position" content="2">
+					</li>
+				</ol>
+
+				<h1>
+					Restaurant logo template mr food logo vector&nbsp;image																			</h1>
+
+				<figure style="padding-top: 99%;" class="target reveal">
+					<div class="highres" data-src="https://cdn2.vectorstock.com/i/1000x1000/41/86/restaurant-logo-template-mr-food-logo-vector-23204186.jpg">
+						<noscript><img src="https://cdn2.vectorstock.com/i/1000x1000/41/86/restaurant-logo-template-mr-food-logo-vector-23204186.jpg" title="Restaurant logo template mr food logo vector image" alt="Restaurant logo template mr food logo"></noscript>
+					<img src="./logo_files/restaurant-logo-template-mr-food-logo-vector-23204186.jpg"></div>
+					<div class="lowres">
+						<img src="./logo_files/restaurant-logo-template-mr-food-logo-vector-23204186(1).jpg" title="Restaurant logo template mr food logo vector image" alt="Restaurant logo template mr food logo">
+					</div>
+					<div class="overlay"></div>
+				</figure>
+
+				<form data-loggedin="0" data-licenses="2" data-license="standard" data-status="" data-payment="single-image">
+					<input type="hidden" id="vector_id" value="23204186">
+					<input type="hidden" id="vector_title" value="Restaurant logo template mr food logo">
+					<input type="hidden" id="vector_description" value="Restaurant logo template, mr food logo. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions.">
+					<input type="hidden" id="vector_url" value="https://www.vectorstock.com/royalty-free-vector/restaurant-logo-template-mr-food-logo-vector-23204186">
+					<input type="hidden" id="vector_media" value="https://cdn2.vectorstock.com/i/1000x1000/41/86/restaurant-logo-template-mr-food-logo-vector-23204186.jpg">
+					<input type="hidden" id="vector_ratio" value="1">
+					<input type="hidden" id="vector_license_status" value="">
+					<input type="hidden" id="artist_name" value="halofandi">
+					<input type="hidden" id="account_user" value="0">
+
+					<div class="options">
+						<!--
+						-- OPTION: License type
+						-->
+						<div class="option" data-type="license" data-license="standard" data-licenses="2">
+							<h6><span class="type">License</span><a href="https://www.vectorstock.com/faq/members/standard-license">Learn More</a></h6>
+							<div class="optgroup radgroup">
+								<fieldset>
+									<label for="f_license_standard" class="checked">
+										<input type="radio" id="f_license_standard" name="license" value="standard" checked="checked" tabindex="2">
+										<span class="label">Standard</span>
+										<span class="descr">For Print, Advertising, Design</span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_license_expanded">
+										<input type="radio" id="f_license_expanded" name="license" value="expanded" tabindex="4">
+										<span class="label">Expanded</span>
+										<span class="descr">For Resale &amp; Reproduction</span>
+									</label>
+								</fieldset>
+							</div>
+
+							<div class="help">
+								<p>The license type determines how you can use this image.</p>
+								<table>
+									<thead>
+										<tr>
+											<th></th>
+																						<th data-license="standard">Std.</th>																						<th data-license="expanded">Exp.</th>										</tr>
+									</thead>
+									<tbody>
+																				<tr>
+											<td>Print / Editorial</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Graphic Design</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Web Design</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Social Media</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Edit &amp; Modify</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Multi-user</td>
+																						<td data-license="standard"><span class="no"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Resale Items</td>
+																						<td data-license="standard"><span class="no"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Unlimited Runs</td>
+																						<td data-license="standard"><span class="no"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<!--
+						-- OPTION: Payment options (Standard)
+						-->
+						<div class="option" data-type="payment" data-license="standard">
+							<h6><span class="type">Ways to Buy</span><a href="https://www.vectorstock.com/pricing">Compare</a></h6>
+							<div class="optgroup radgroup" data-license="standard">
+								<fieldset>
+									<label for="f_payment_standard_single-image" class="checked">
+										<input type="radio" id="f_payment_standard_single-image" name="payment_standard" data-cost="14.99" value="single-image" checked="checked" tabindex="5">
+										<span class="label">Pay-per-Image</span>
+										<span class="value"><small>$</small><var>14.99</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_standard_credits">
+										<input type="radio" id="f_payment_standard_credits" name="payment_standard" data-cost="1" value="credits" tabindex="6">
+										<span class="label">Credits</span>
+										<span class="value"><small>$</small><var>1.00</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_standard_subscription">
+										<input type="radio" id="f_payment_standard_subscription" name="payment_standard" data-cost="1" value="subscription" tabindex="7">
+										<span class="label">Subscription</span>
+										<span class="value"><small>$</small><var>0.69</var></span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="help">
+								<p>There are three ways to pay for Standard licenses. Prices are $<abbr title="United States Dollars">US</abbr>.</p>
+
+								<table>
+									<thead>
+										<tr>
+											<th>Pay with</th>
+											<th>Image Price</th>
+										</tr>
+									</thead>
+									<tbody>
+																				<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pay-per-Image</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>14.99</span>
+												</span>
+												<span class="byline">One-time payment</span>
+											</td>
+										</tr>
+																				<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pre-paid Credits</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>1</span>
+												</span>
+												<span class="byline">Download images on-demand (1 credit = $1). Minimum purchase of 30.</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Subscription Plan</span>
+													<span class="dm"></span>
+													<span class="dd"><em>From</em> 69c</span>
+												</span>
+												<span class="byline">Choose a monthly plan. Unused downloads automatically roll into following month.</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!--
+						-- OPTION: Payment options (Expanded)
+						-->
+						<div class="option" data-type="payment" data-license="expanded">
+							<h6><span class="type">Ways to Buy</span><a href="https://www.vectorstock.com/faq/members/ways-to-buy">Compare</a></h6>
+							<div class="optgroup radgroup" data-license="expanded">
+								<fieldset>
+									<label for="f_payment_expanded_single-image" class="checked">
+										<input type="radio" id="f_payment_expanded_single-image" name="payment_expanded" data-cost="29.99" value="single-image" checked="checked" tabindex="8">
+										<span class="label">Pay-per-Image</span>
+										<span class="value"><small>$</small><var>29.99</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_expanded_credits">
+										<input type="radio" id="f_payment_expanded_credits" name="payment_expanded" data-cost="30" value="credits" tabindex="9">
+										<span class="label">Credits</span>
+										<span class="value"><small>$</small><var>30.00</var></span>
+									</label>
+								</fieldset>
+							</div>
+														<div class="help">
+								<p>There are two ways to pay for Expanded licenses. Prices are $<abbr title="United States Dollars">US</abbr>.</p>
+
+								<table>
+									<thead>
+										<tr>
+											<th>Pay with</th>
+											<th>Cost per Image</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pay-per-Image</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>29.99</span>
+												</span>
+												<span class="byline">One-off payment, no signup needed.</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pre-paid Credits</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>30</span>
+												</span>
+												<span class="byline">Download images on-demand (1 credit = $1).</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+													</div>
+						<!--
+						-- OPTION: Customization
+						-->
+						<div class="option" data-type="customization">
+							<h6><span class="type">New Option!</span><a href="https://www.vectorstock.com/faq/members/what-is-hire-a-designer">What is this?</a></h6>
+							<div class="optgroup chkgroup">
+								<fieldset>
+									<label for="f_payment_customization">
+										<input type="checkbox" id="f_payment_customization" name="payment_customization" data-cost="85" value="customization" tabindex="12">
+										<span class="label">Customize image</span>
+										<span class="descr">Only available with Pay-per-Image</span>
+										<span class="value"><small>$</small><var>85.00</var></span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="help">
+								<p>Love the image but just need a few modifications? Let our talented artists do the work for you!</p>
+								<p>We’ll connect you with a designer who can make updates and send you the artwork in a format of your choice.</p>
+								<h4>Examples</h4>
+								<ul>
+									<li>Change the text</li>
+									<li>Modify colors</li>
+									<li>Resize to new dimensions</li>
+									<li>Include logo or symbol</li>
+									<li>Add your company or business name</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="download">
+						<button type="button" data-action="download">
+							<span class="label">Download Image</span>
+							<span class="icon"></span>
+						</button>
+						<h6><span class="label">Files Included</span></h6>
+						<div class="help">
+							<span class="loading"><span class="label">Loading Details...</span></span>
+						</div>
+					</div>
+					<div class="download_options">
+						<div class="wrap">
+							<div class="optgroup" data-action="download">
+								<span class="header">Download File/s:</span>
+								<div class="dropdown" data-value="zip">
+									<div class="display">
+										<span class="label"><strong>ZIP Archive</strong></span>
+										<span class="icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M10.6,12.8 15,17.2 19.4,12.8"></path></svg></span>
+									</div>
+									<div class="select">
+										<select>
+											<optgroup label="All Files">
+												<option value="zip" data-label="ZIP Archive" data-details="" data-url="" selected="selected">ZIP Archive</option>											</optgroup>
+											<optgroup label="Image">
+												<option value="jpg" data-label="High-res JPG" data-details="300 DPI+" data-url="">High-res JPG (300 DPI+)</option>												<option value="png" data-label="High-res PNG" data-details="300 DPI+" data-url="">High-res PNG (300 DPI+)</option>											</optgroup>
+											<optgroup label="Vector">
+												<option value="ai" data-label="Adobe Illustrator" data-details="v10+" data-url="">Adobe Illustrator (v10+)</option>												<option value="eps" data-label="Vector EPS" data-details="v8+" data-url="">Vector EPS (v8+)</option>												<option value="pdf" data-label="Vector PDF" data-details="" data-url="">Vector PDF</option>											</optgroup>
+										</select>
+									</div>
+								</div>
+								<button type="button" data-action="download_file">
+									<span class="label">Download ZIP</span>
+									<span class="icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M23.6,21.2 23.6,9.5 16.4,9.5 16.4,21.3 10.8,21.3 11,21.5 20,30.5 29.2,21.3"></path></svg></span>
+								</button>
+							</div>
+							<div class="optgroup" data-action="customization" data-status="uninitiated">
+								<span class="header">Image Customization:</span>
+								<ul class="actions">
+									<li>
+										<button type="button" data-job-url="/customizations">
+											<span class="label">View your job...</span>
+											<span class="icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M12.8,19.4 17.2,15 12.8,10.6"></path></svg></span>
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- Image -->
+			<div class="image">
+				<figure data-orientation="square" style="padding-top: 99%;" class="target reveal">
+					<div class="highres" data-src="https://cdn2.vectorstock.com/i/1000x1000/41/86/restaurant-logo-template-mr-food-logo-vector-23204186.jpg">
+						<noscript><img src="https://cdn2.vectorstock.com/i/1000x1000/41/86/restaurant-logo-template-mr-food-logo-vector-23204186.jpg" title="Restaurant logo template mr food logo vector image" alt="Restaurant logo template mr food logo"></noscript>
+					<img src="./logo_files/restaurant-logo-template-mr-food-logo-vector-23204186.jpg"></div>
+					<div class="lowres">
+						<img src="./logo_files/restaurant-logo-template-mr-food-logo-vector-23204186(1).jpg" title="Restaurant logo template mr food logo vector image" alt="Restaurant logo template mr food logo">
+					</div>
+					<div class="overlay"></div>
+					<div class="panels">
+						<div class="share">
+							<h4>Share with others</h4>
+							<ul>
+								<li class="pinterest"><button type="button" data-action="pinterest"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M12.5,0C5.6,0,0,5.6,0,12.5c0,5.12,3.08,9.52,7.48,11.45c-0.03-0.87-0.01-1.92,0.22-2.87c0.24-1.01,1.61-6.81,1.61-6.81s-0.4-0.8-0.4-1.98c0-1.85,1.07-3.24,2.41-3.24c1.14,0,1.69,0.85,1.69,1.88c0,1.14-0.73,2.85-1.1,4.44c-0.31,1.33,0.67,2.41,1.97,2.41c2.37,0,3.96-3.04,3.96-6.65c0-2.74-1.85-4.79-5.2-4.79c-3.79,0-6.15,2.83-6.15,5.99c0,1.09,0.32,1.86,0.82,2.45c0.23,0.27,0.26,0.38,0.18,0.7c-0.06,0.23-0.2,0.78-0.25,1c-0.08,0.32-0.34,0.43-0.63,0.31c-1.75-0.71-2.56-2.62-2.56-4.77c0-3.55,3-7.81,8.93-7.81c4.77,0,7.91,3.45,7.91,7.16c0,4.9-2.73,8.57-6.75,8.57c-1.35,0-2.62-0.73-3.05-1.56c0,0-0.73,2.88-0.88,3.44c-0.27,0.96-0.78,1.93-1.26,2.68C10.08,24.82,11.27,25,12.5,25C19.4,25,25,19.4,25,12.5S19.4,0,12.5,0L12.5,0z"></path></svg></span><span class="label">Pinterest</span></span></button></li>
+								<li class="facebook"><button type="button" data-action="facebook"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M22.44,1H2.56C1.7,1,1,1.7,1,2.56v19.88C1,23.3,1.7,24,2.56,24h10.41v-8.89H9.98v-3.46h2.99V9.1c0-2.96,1.81-4.58,4.45-4.58c1.27,0,2.35,0.09,2.67,0.14v3.1l-1.83,0c-1.44,0-1.72,0.68-1.72,1.69v2.21h3.43l-0.45,3.46h-2.98V24h5.89C23.3,24,24,23.3,24,22.44V2.56C24,1.7,23.3,1,22.44,1z"></path></svg></span><span class="label">Facebook</span></span></button></li>
+								<li class="twitter"><button type="button" data-action="twitter"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M7.86,22.5c9.43,0,14.59-7.69,14.59-14.37c0-0.22,0-0.44-0.01-0.65c1-0.71,1.87-1.6,2.56-2.61c-0.92,0.4-1.91,0.67-2.95,0.79c1.06-0.62,1.87-1.61,2.26-2.79c-0.99,0.58-2.09,1-3.26,1.23c-0.94-0.98-2.27-1.6-3.74-1.6c-2.83,0-5.13,2.26-5.13,5.05c0,0.4,0.05,0.78,0.13,1.15C8.05,8.49,4.27,6.48,1.74,3.42C1.3,4.17,1.05,5.04,1.05,5.96c0,1.75,0.91,3.3,2.28,4.2C2.49,10.14,1.7,9.91,1,9.53C1,9.55,1,9.58,1,9.6c0,2.45,1.77,4.49,4.11,4.95c-0.43,0.12-0.88,0.18-1.35,0.18c-0.33,0-0.65-0.03-0.96-0.09c0.65,2.01,2.55,3.47,4.79,3.51C5.84,19.5,3.63,20.3,1.22,20.3c-0.41,0-0.82-0.02-1.22-0.07C2.27,21.66,4.97,22.5,7.86,22.5"></path></svg></span><span class="label">Twitter</span></span></button></li>
+								<li class="email"><button type="button" data-action="email"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M22.48,4.17H2.52C1.13,4.17,0,5.3,0,6.69v11.62c0,1.39,1.13,2.52,2.52,2.52h19.96c1.39,0,2.52-1.13,2.52-2.52V6.69C25,5.3,23.87,4.17,22.48,4.17z M23.49,18.31c0,0.56-0.45,1.01-1.01,1.01H2.52c-0.55,0-1.01-0.45-1.01-1.01V6.69c0-0.56,0.45-1.01,1.01-1.01h19.96c0.56,0,1.01,0.45,1.01,1.01V18.31z"></path><path d="M19.95,7.95l-7.45,4.83L5.05,7.95C4.7,7.72,4.24,7.82,4.01,8.17C3.78,8.52,3.88,8.99,4.23,9.22l7.86,5.1c0.13,0.08,0.27,0.12,0.41,0.12s0.29-0.04,0.41-0.12l7.86-5.1c0.35-0.23,0.45-0.7,0.22-1.05C20.77,7.82,20.3,7.72,19.95,7.95z"></path></svg></span><span class="label">Email</span></span></button></li>
+							</ul>
+						</div>
+						<div class="composite">
+							<button type="button" data-action="download"><span><span class="label">Download JPG Preview Image</span></span></button>
+						</div>
+					</div>
+				</figure>
+				<div class="details">
+					<div class="meta">
+						<ul>
+							<li class="meta-id">
+								<dl><dt>Image ID</dt><dd>23204186</dd></dl>
+							</li>
+							<li class="meta-artist">
+								<dl>
+									<dt>Artist</dt>
+									<dd><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_halofandi" rel="nofollow">halofandi</a><button type="button" data-action="follow" title="Follow Artists that you like to create a newsfeed of their recent images."><span class="label">Follow</span></button></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<div class="options" data-total="2">
+						<ul>
+							<li class="opt-like">
+								<button type="button" data-action="like" data-count="1"><span class="icon">♥</span><span class="label">Like</span><span class="tally">(1)</span></button>
+							</li>
+							<li class="opt-cart">
+								<button type="button" data-action="cart"><span class="icon">+</span><span class="label">Cart</span></button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Metadata -->
+			<div class="metadata">
+				<div itemtype="http://schema.org/ImageObject" itemscope="">
+					<img src="./logo_files/restaurant-logo-template-mr-food-logo-vector-23204186.jpg" itemprop="contentUrl" alt="Restaurant logo template mr food logo vector">
+					<meta itemprop="url" content="https://cdn2.vectorstock.com/i/1000x1000/41/86/restaurant-logo-template-mr-food-logo-vector-23204186.jpg">
+					<meta itemprop="name" content="Restaurant logo template mr food logo">
+					<meta itemprop="description" content="Restaurant logo template, mr food logo. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions. vector image">
+					<meta itemprop="datePublished" content="2018-12-17">
+					<meta itemprop="fileFormat" content="image/jpeg">
+					<meta itemprop="acquireLicensePage" content="https://www.vectorstock.com/royalty-free-vector/restaurant-logo-template-mr-food-logo-vector-23204186">
+					<meta itemprop="license" content="https://www.vectorstock.com/faq/members/standard-license">
+					<meta itemprop="sourceOrganization" content="VectorStock.com">
+				</div>
+			</div>
+			
+		</section>
+
+
+		<section id="vs-related">
+			<div id="group-similar" class="group">
+				<h6><span class="icon"></span><strong>Similar Images</strong></h6>
+
+				<div class="gallery large">
+					<ul>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/46/91/delicious-noodle-on-a-bowl-vector-21244691.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/delicious-noodle-on-a-bowl-vector-21244691" title="delicious noodle on a bowl vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/46/91/delicious-noodle-on-a-bowl-vector-21244691.jpg" title="delicious noodle on a bowl" alt="delicious noodle on a bowl vector image"></noscript><img src="./logo_files/delicious-noodle-on-a-bowl-vector-21244691.jpg"></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/33/83/fire-flame-hot-plate-logo-icon-vector-24043383.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/fire-flame-hot-plate-logo-icon-vector-24043383" title="fire flame hot plate logo icon vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/33/83/fire-flame-hot-plate-logo-icon-vector-24043383.jpg" title="fire flame hot plate logo icon" alt="fire flame hot plate logo icon vector image"></noscript><img src="./logo_files/fire-flame-hot-plate-logo-icon-vector-24043383.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/07/74/wine-house-logo-design-inspiration-vector-24750774.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/wine-house-logo-design-inspiration-vector-24750774" title="wine house logo design inspiration vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/07/74/wine-house-logo-design-inspiration-vector-24750774.jpg" title="wine house logo design inspiration" alt="wine house logo design inspiration vector image"></noscript><img src="./logo_files/wine-house-logo-design-inspiration-vector-24750774.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/87/94/restaurant-food-fork-spoon-knife-logo-vector-21318794.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/restaurant-food-fork-spoon-knife-logo-vector-21318794" title="restaurant food fork spoon knife logo vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/87/94/restaurant-food-fork-spoon-knife-logo-vector-21318794.jpg" title="restaurant food fork spoon knife logo" alt="restaurant food fork spoon knife logo vector image"></noscript><img src="./logo_files/restaurant-food-fork-spoon-knife-logo-vector-21318794.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/98/89/rgood-food-restaurant-emblem-vector-23269889.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/rgood-food-restaurant-emblem-vector-23269889" title="rgood food restaurant emblem vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/98/89/rgood-food-restaurant-emblem-vector-23269889.jpg" title="rgood food restaurant emblem" alt="rgood food restaurant emblem vector image"></noscript><img src="./logo_files/rgood-food-restaurant-emblem-vector-23269889.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/65/94/catering-service-logo-plate-with-fork-and-spoon-vector-34346594.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/catering-service-logo-plate-with-fork-and-spoon-vector-34346594" title="catering service logo plate with fork and spoon vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/65/94/catering-service-logo-plate-with-fork-and-spoon-vector-34346594.jpg" title="catering service logo plate with fork and spoon" alt="catering service logo plate with fork and spoon vector image"></noscript><img src="./logo_files/catering-service-logo-plate-with-fork-and-spoon-vector-34346594.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/71/17/letter-v-fork-restaurant-logo-vector-22857117.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/letter-v-fork-restaurant-logo-vector-22857117" title="letter v fork restaurant logo vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/71/17/letter-v-fork-restaurant-logo-vector-22857117.jpg" title="letter v fork restaurant logo" alt="letter v fork restaurant logo vector image"></noscript><img src="./logo_files/letter-v-fork-restaurant-logo-vector-22857117.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/96/02/good-food-logo-design-templategraphic-knife-and-vector-25479602.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/good-food-logo-design-templategraphic-knife-and-vector-25479602" title="good food logo design templategraphic knife and vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/96/02/good-food-logo-design-templategraphic-knife-and-vector-25479602.jpg" title="good food logo design templategraphic knife and" alt="good food logo design templategraphic knife and vector image"></noscript><img src="./logo_files/good-food-logo-design-templategraphic-knife-and-vector-25479602.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/36/20/court-logo-vector-27883620.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/court-logo-vector-27883620" title="court logo vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/36/20/court-logo-vector-27883620.jpg" title="court logo" alt="court logo vector image"></noscript><img src="./logo_files/court-logo-vector-27883620.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/50/37/knife-spoon-fork-logo-design-concept-template-vector-21225037.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/knife-spoon-fork-logo-design-concept-template-vector-21225037" title="knife spoon fork logo design concept template vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/50/37/knife-spoon-fork-logo-design-concept-template-vector-21225037.jpg" title="knife spoon fork logo design concept template" alt="knife spoon fork logo design concept template vector image"></noscript><img src="./logo_files/knife-spoon-fork-logo-design-concept-template-vector-21225037.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/11/51/breakfast-logo-template-vector-25871151.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/breakfast-logo-template-vector-25871151" title="breakfast-logo-template vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/11/51/breakfast-logo-template-vector-25871151.jpg" title="breakfast-logo-template" alt="breakfast-logo-template vector image"></noscript><img src="./logo_files/breakfast-logo-template-vector-25871151.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/20/77/good-food-logo-design-vector-21312077.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/good-food-logo-design-vector-21312077" title="good food logo design vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/20/77/good-food-logo-design-vector-21312077.jpg" title="good food logo design" alt="good food logo design vector image"></noscript><img src="./logo_files/good-food-logo-design-vector-21312077.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/66/10/chef-menu-logo-elements-vector-26046610.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/chef-menu-logo-elements-vector-26046610" title="chef menu logo elements vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/66/10/chef-menu-logo-elements-vector-26046610.jpg" title="chef menu logo elements" alt="chef menu logo elements vector image"></noscript><img src="./logo_files/chef-menu-logo-elements-vector-26046610.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/66/60/spoon-fork-restaurant-food-gold-logo-vector-29056660.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/spoon-fork-restaurant-food-gold-logo-vector-29056660" title="spoon fork restaurant food gold logo vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/66/60/spoon-fork-restaurant-food-gold-logo-vector-29056660.jpg" title="spoon fork restaurant food gold logo" alt="spoon fork restaurant food gold logo vector image"></noscript><img src="./logo_files/spoon-fork-restaurant-food-gold-logo-vector-29056660.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/17/07/cooking-club-logo-design-heraldic-shield-vector-21501707.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/cooking-club-logo-design-heraldic-shield-vector-21501707" title="cooking club logo design heraldic shield vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/17/07/cooking-club-logo-design-heraldic-shield-vector-21501707.jpg" title="cooking club logo design heraldic shield" alt="cooking club logo design heraldic shield vector image"></noscript><img src="./logo_files/cooking-club-logo-design-heraldic-shield-vector-21501707.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/17/95/set-isolated-cafe-and-restaurant-logos-vector-23181795.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/set-isolated-cafe-and-restaurant-logos-vector-23181795" title="set isolated cafe and restaurant logos vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/17/95/set-isolated-cafe-and-restaurant-logos-vector-23181795.jpg" title="set isolated cafe and restaurant logos" alt="set isolated cafe and restaurant logos vector image"></noscript><img src="./logo_files/set-isolated-cafe-and-restaurant-logos-vector-23181795.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/10/04/cafe-symbol-logo-vector-30061004.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/cafe-symbol-logo-vector-30061004" title="cafe symbol logo vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/10/04/cafe-symbol-logo-vector-30061004.jpg" title="cafe symbol logo" alt="cafe symbol logo vector image"></noscript><img src="./logo_files/cafe-symbol-logo-vector-30061004.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/51/46/creative-kitchen-cooker-splashes-creative-kitchen-vector-25835146.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/creative-kitchen-cooker-splashes-creative-kitchen-vector-25835146" title="creative kitchen cooker splashes creative kitchen vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/51/46/creative-kitchen-cooker-splashes-creative-kitchen-vector-25835146.jpg" title="creative kitchen cooker splashes creative kitchen" alt="creative kitchen cooker splashes creative kitchen vector image"></noscript><img src="./logo_files/creative-kitchen-cooker-splashes-creative-kitchen-vector-25835146.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/43/29/set-pizza-house-emblems-pizzeria-labels-design-vector-25234329.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/set-pizza-house-emblems-pizzeria-labels-design-vector-25234329" title="set pizza house emblems pizzeria labels design vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/43/29/set-pizza-house-emblems-pizzeria-labels-design-vector-25234329.jpg" title="set pizza house emblems pizzeria labels design" alt="set pizza house emblems pizzeria labels design vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/49/48/italian-restaurant-logo-vector-23794948.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/italian-restaurant-logo-vector-23794948" title="italian-restaurant-logo vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/49/48/italian-restaurant-logo-vector-23794948.jpg" title="italian-restaurant-logo" alt="italian-restaurant-logo vector image"></noscript></a></li>
+					</ul>
+				</div>
+				<div class="gallery small more">
+					<ul>
+						<li data-id="20799405" data-title="food and beverage logo" data-src="https://cdn1.vectorstock.com/i/thumbs/94/05/food-and-beverage-logo-vector-20799405.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/food-and-beverage-logo-vector-20799405" title="food and beverage logo vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/94/05/food-and-beverage-logo-vector-20799405.jpg" title="food and beverage logo" alt="food and beverage logo vector image"></noscript><img src="./logo_files/food-and-beverage-logo-vector-20799405.jpg"></a></li>
+						<li data-id="21904619" data-title="pizza logo" data-src="https://cdn5.vectorstock.com/i/thumbs/46/19/pizza-logo-vector-21904619.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/pizza-logo-vector-21904619" title="pizza logo vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/46/19/pizza-logo-vector-21904619.jpg" title="pizza logo" alt="pizza logo vector image"></noscript><img src="./logo_files/pizza-logo-vector-21904619.jpg"></a></li>
+						<li data-id="30595398" data-title="business logotype design" data-src="https://cdn4.vectorstock.com/i/thumbs/53/98/business-logotype-design-vector-30595398.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/business-logotype-design-vector-30595398" title="business logotype design vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/53/98/business-logotype-design-vector-30595398.jpg" title="business logotype design" alt="business logotype design vector image"></noscript><img src="./logo_files/business-logotype-design-vector-30595398.jpg"></a></li>
+						<li data-id="25239462" data-title="black and white template for steak house" data-src="https://cdn3.vectorstock.com/i/thumbs/94/62/black-and-white-template-for-steak-house-vector-25239462.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/black-and-white-template-for-steak-house-vector-25239462" title="black and white template for steak house vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/94/62/black-and-white-template-for-steak-house-vector-25239462.jpg" title="black and white template for steak house" alt="black and white template for steak house vector image"></noscript><img src="./logo_files/black-and-white-template-for-steak-house-vector-25239462.jpg"></a></li>
+						<li data-id="26958580" data-title="hot and fresh pizza retro badge design" data-src="https://cdn1.vectorstock.com/i/thumbs/85/80/hot-and-fresh-pizza-retro-badge-design-vector-26958580.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/hot-and-fresh-pizza-retro-badge-design-vector-26958580" title="hot and fresh pizza retro badge design vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/85/80/hot-and-fresh-pizza-retro-badge-design-vector-26958580.jpg" title="hot and fresh pizza retro badge design" alt="hot and fresh pizza retro badge design vector image"></noscript><img src="./logo_files/hot-and-fresh-pizza-retro-badge-design-vector-26958580.jpg"></a></li>
+						<li data-id="21756440" data-title="vintage logotypes and various symbols for design" data-src="https://cdn1.vectorstock.com/i/thumbs/64/40/vintage-logotypes-and-various-symbols-for-design-vector-21756440.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/vintage-logotypes-and-various-symbols-for-design-vector-21756440" title="vintage logotypes and various symbols for design vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/64/40/vintage-logotypes-and-various-symbols-for-design-vector-21756440.jpg" title="vintage logotypes and various symbols for design" alt="vintage logotypes and various symbols for design vector image"></noscript><img src="./logo_files/vintage-logotypes-and-various-symbols-for-design-vector-21756440.jpg"></a></li>
+						<li data-id="28411080" data-title="food delivery logo" data-src="https://cdn1.vectorstock.com/i/thumbs/10/80/food-delivery-logo-vector-28411080.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/food-delivery-logo-vector-28411080" title="food delivery logo vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/10/80/food-delivery-logo-vector-28411080.jpg" title="food delivery logo" alt="food delivery logo vector image"></noscript><img src="./logo_files/food-delivery-logo-vector-28411080.jpg"></a></li>
+						<li data-id="13431518" data-title="food logotype restaurant vintage design cooking" data-src="https://cdn4.vectorstock.com/i/thumbs/15/18/food-logotype-restaurant-vintage-design-cooking-vector-13431518.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/food-logotype-restaurant-vintage-design-cooking-vector-13431518" title="food logotype restaurant vintage design cooking vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/15/18/food-logotype-restaurant-vintage-design-cooking-vector-13431518.jpg" title="food logotype restaurant vintage design cooking" alt="food logotype restaurant vintage design cooking vector image"></noscript><img src="./logo_files/food-logotype-restaurant-vintage-design-cooking-vector-13431518.jpg"></a></li>
+						<li data-id="17344435" data-title="spoon fork food restaurant logo" data-src="https://cdn1.vectorstock.com/i/thumbs/44/35/spoon-fork-food-restaurant-logo-vector-17344435.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/spoon-fork-food-restaurant-logo-vector-17344435" title="spoon fork food restaurant logo vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/44/35/spoon-fork-food-restaurant-logo-vector-17344435.jpg" title="spoon fork food restaurant logo" alt="spoon fork food restaurant logo vector image"></noscript><img src="./logo_files/spoon-fork-food-restaurant-logo-vector-17344435.jpg"></a></li>
+						<li data-id="24287194" data-title="cooking chef logo on white background" data-src="https://cdn5.vectorstock.com/i/thumbs/71/94/cooking-chef-logo-on-white-background-vector-24287194.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/cooking-chef-logo-on-white-background-vector-24287194" title="cooking chef logo on white background vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/71/94/cooking-chef-logo-on-white-background-vector-24287194.jpg" title="cooking chef logo on white background" alt="cooking chef logo on white background vector image"></noscript><img src="./logo_files/cooking-chef-logo-on-white-background-vector-24287194.jpg"></a></li>
+						<li data-id="20863656" data-title="cooking master classes labels restaurant or cafe" data-src="https://cdn2.vectorstock.com/i/thumbs/36/56/cooking-master-classes-labels-restaurant-or-cafe-vector-20863656.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/cooking-master-classes-labels-restaurant-or-cafe-vector-20863656" title="cooking master classes labels restaurant or cafe vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/36/56/cooking-master-classes-labels-restaurant-or-cafe-vector-20863656.jpg" title="cooking master classes labels restaurant or cafe" alt="cooking master classes labels restaurant or cafe vector image"></noscript><img src="./logo_files/cooking-master-classes-labels-restaurant-or-cafe-vector-20863656.jpg"></a></li>
+						<li data-id="34880452" data-title="set pizza hand written lettering logo label" data-src="https://cdn3.vectorstock.com/i/thumbs/04/52/set-pizza-hand-written-lettering-logo-label-vector-34880452.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/set-pizza-hand-written-lettering-logo-label-vector-34880452" title="set pizza hand written lettering logo label vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/04/52/set-pizza-hand-written-lettering-logo-label-vector-34880452.jpg" title="set pizza hand written lettering logo label" alt="set pizza hand written lettering logo label vector image"></noscript><img src="./logo_files/set-pizza-hand-written-lettering-logo-label-vector-34880452.jpg"></a></li>
+						<li data-id="34597507" data-title="linear fork with eat me text line art icon on" data-src="https://cdn3.vectorstock.com/i/thumbs/75/07/linear-fork-with-eat-me-text-line-art-icon-on-vector-34597507.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/linear-fork-with-eat-me-text-line-art-icon-on-vector-34597507" title="linear fork with eat me text line art icon on vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/75/07/linear-fork-with-eat-me-text-line-art-icon-on-vector-34597507.jpg" title="linear fork with eat me text line art icon on" alt="linear fork with eat me text line art icon on vector image"></noscript><img src="./logo_files/linear-fork-with-eat-me-text-line-art-icon-on-vector-34597507.jpg"></a></li>
+						<li data-id="20998203" data-title="baker chef logo" data-src="https://cdn4.vectorstock.com/i/thumbs/82/03/baker-chef-logo-vector-20998203.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/baker-chef-logo-vector-20998203" title="baker chef logo vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/82/03/baker-chef-logo-vector-20998203.jpg" title="baker chef logo" alt="baker chef logo vector image"></noscript><img src="./logo_files/baker-chef-logo-vector-20998203.jpg"></a></li>
+						<li data-id="25956988" data-title="chicken kitchen restaurant logo symbolprint" data-src="https://cdn4.vectorstock.com/i/thumbs/69/88/chicken-kitchen-restaurant-logo-symbolprint-vector-25956988.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/chicken-kitchen-restaurant-logo-symbolprint-vector-25956988" title="chicken kitchen restaurant logo symbolprint vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/69/88/chicken-kitchen-restaurant-logo-symbolprint-vector-25956988.jpg" title="chicken kitchen restaurant logo symbolprint" alt="chicken kitchen restaurant logo symbolprint vector image"></noscript><img src="./logo_files/chicken-kitchen-restaurant-logo-symbolprint-vector-25956988.jpg"></a></li>
+						<li data-id="31938021" data-title="purveyors surmullet abstract sign" data-src="https://cdn2.vectorstock.com/i/thumbs/80/21/purveyors-surmullet-abstract-sign-vector-31938021.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/purveyors-surmullet-abstract-sign-vector-31938021" title="purveyors surmullet abstract sign vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/80/21/purveyors-surmullet-abstract-sign-vector-31938021.jpg" title="purveyors surmullet abstract sign" alt="purveyors surmullet abstract sign vector image"></noscript><img src="./logo_files/purveyors-surmullet-abstract-sign-vector-31938021.jpg"></a></li>
+						<li data-id="20745472" data-title="vegan pizza logo" data-src="https://cdn3.vectorstock.com/i/thumbs/54/72/vegan-pizza-logo-vector-20745472.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/vegan-pizza-logo-vector-20745472" title="vegan pizza logo vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/54/72/vegan-pizza-logo-vector-20745472.jpg" title="vegan pizza logo" alt="vegan pizza logo vector image"></noscript><img src="./logo_files/vegan-pizza-logo-vector-20745472.jpg"></a></li>
+						<li data-id="20107559" data-title="restaurant logo sign emblem in neon style" data-src="https://cdn5.vectorstock.com/i/thumbs/75/59/restaurant-logo-sign-emblem-in-neon-style-vector-20107559.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/restaurant-logo-sign-emblem-in-neon-style-vector-20107559" title="restaurant logo sign emblem in neon style vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/75/59/restaurant-logo-sign-emblem-in-neon-style-vector-20107559.jpg" title="restaurant logo sign emblem in neon style" alt="restaurant logo sign emblem in neon style vector image"></noscript><img src="./logo_files/restaurant-logo-sign-emblem-in-neon-style-vector-20107559.jpg"></a></li>
+						<li data-id="6395187" data-title="chef cook logo icon toque chefs hat trend" data-src="https://cdn3.vectorstock.com/i/thumbs/51/87/chef-cook-logo-icon-toque-chefs-hat-trend-vector-6395187.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/chef-cook-logo-icon-toque-chefs-hat-trend-vector-6395187" title="chef cook logo icon toque chefs hat trend vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/51/87/chef-cook-logo-icon-toque-chefs-hat-trend-vector-6395187.jpg" title="chef cook logo icon toque chefs hat trend" alt="chef cook logo icon toque chefs hat trend vector image"></noscript><img src="./logo_files/chef-cook-logo-icon-toque-chefs-hat-trend-vector-6395187.jpg"></a></li>
+						<li data-id="13608793" data-title="menu logo restaurant tableware fork spoon knife" data-src="https://cdn4.vectorstock.com/i/thumbs/87/93/menu-logo-restaurant-tableware-fork-spoon-knife-vector-13608793.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/menu-logo-restaurant-tableware-fork-spoon-knife-vector-13608793" title="menu logo restaurant tableware fork spoon knife vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/87/93/menu-logo-restaurant-tableware-fork-spoon-knife-vector-13608793.jpg" title="menu logo restaurant tableware fork spoon knife" alt="menu logo restaurant tableware fork spoon knife vector image"></noscript><img src="./logo_files/menu-logo-restaurant-tableware-fork-spoon-knife-vector-13608793.jpg"></a></li>
+						<li data-id="23032983" data-title="chef hat icon" data-src="https://cdn4.vectorstock.com/i/thumbs/29/83/chef-hat-icon-vector-23032983.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/chef-hat-icon-vector-23032983" title="chef hat icon vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/29/83/chef-hat-icon-vector-23032983.jpg" title="chef hat icon" alt="chef hat icon vector image"></noscript><img src="./logo_files/chef-hat-icon-vector-23032983.jpg"></a></li>
+						<li data-id="30766956" data-title="two logo pizza on a white background" data-src="https://cdn2.vectorstock.com/i/thumbs/69/56/two-logo-pizza-on-a-white-background-vector-30766956.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/two-logo-pizza-on-a-white-background-vector-30766956" title="two logo pizza on a white background vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/69/56/two-logo-pizza-on-a-white-background-vector-30766956.jpg" title="two logo pizza on a white background" alt="two logo pizza on a white background vector image"></noscript><img src="./logo_files/two-logo-pizza-on-a-white-background-vector-30766956.jpg"></a></li>
+						<li data-id="32323672" data-title="italian spaghetti logo design idea" data-src="https://cdn3.vectorstock.com/i/thumbs/36/72/italian-spaghetti-logo-design-idea-vector-32323672.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/italian-spaghetti-logo-design-idea-vector-32323672" title="italian spaghetti logo design idea vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/36/72/italian-spaghetti-logo-design-idea-vector-32323672.jpg" title="italian spaghetti logo design idea" alt="italian spaghetti logo design idea vector image"></noscript><img src="./logo_files/italian-spaghetti-logo-design-idea-vector-32323672.jpg"></a></li>
+						<li data-id="22765694" data-title="restaurant logos badges and labels design" data-src="https://cdn5.vectorstock.com/i/thumbs/56/94/restaurant-logos-badges-and-labels-design-vector-22765694.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/restaurant-logos-badges-and-labels-design-vector-22765694" title="restaurant logos badges and labels design vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/56/94/restaurant-logos-badges-and-labels-design-vector-22765694.jpg" title="restaurant logos badges and labels design" alt="restaurant logos badges and labels design vector image"></noscript></a></li>
+						<li data-id="23221192" data-title="cook book logo cooking learn logotype" data-src="https://cdn3.vectorstock.com/i/thumbs/11/92/cook-book-logo-cooking-learn-logotype-vector-23221192.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/cook-book-logo-cooking-learn-logotype-vector-23221192" title="cook book logo cooking learn logotype vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/11/92/cook-book-logo-cooking-learn-logotype-vector-23221192.jpg" title="cook book logo cooking learn logotype" alt="cook book logo cooking learn logotype vector image"></noscript></a></li>
+						<li data-id="23688195" data-title="sea food logo stylized image fish and forks" data-src="https://cdn1.vectorstock.com/i/thumbs/81/95/sea-food-logo-stylized-image-fish-and-forks-vector-23688195.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/sea-food-logo-stylized-image-fish-and-forks-vector-23688195" title="sea food logo stylized image fish and forks vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/81/95/sea-food-logo-stylized-image-fish-and-forks-vector-23688195.jpg" title="sea food logo stylized image fish and forks" alt="sea food logo stylized image fish and forks vector image"></noscript></a></li>
+						<li data-id="23381702" data-title="food point logo design template creative symbol" data-src="https://cdn3.vectorstock.com/i/thumbs/17/02/food-point-logo-design-template-creative-symbol-vector-23381702.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/food-point-logo-design-template-creative-symbol-vector-23381702" title="food point logo design template creative symbol vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/17/02/food-point-logo-design-template-creative-symbol-vector-23381702.jpg" title="food point logo design template creative symbol" alt="food point logo design template creative symbol vector image"></noscript></a></li>
+						<li data-id="25963684" data-title="italian pizza logo with empty wooden space" data-src="https://cdn5.vectorstock.com/i/thumbs/36/84/italian-pizza-logo-with-empty-wooden-space-vector-25963684.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/italian-pizza-logo-with-empty-wooden-space-vector-25963684" title="italian pizza logo with empty wooden space vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/36/84/italian-pizza-logo-with-empty-wooden-space-vector-25963684.jpg" title="italian pizza logo with empty wooden space" alt="italian pizza logo with empty wooden space vector image"></noscript></a></li>
+						<li data-id="24044520" data-title="kitchen logo design" data-src="https://cdn1.vectorstock.com/i/thumbs/45/20/kitchen-logo-design-vector-24044520.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/kitchen-logo-design-vector-24044520" title="kitchen logo design vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/45/20/kitchen-logo-design-vector-24044520.jpg" title="kitchen logo design" alt="kitchen logo design vector image"></noscript></a></li>
+						<li data-id="27284107" data-title="fork in a circle plate logo design inspiration" data-src="https://cdn3.vectorstock.com/i/thumbs/41/07/fork-in-a-circle-plate-logo-design-inspiration-vector-27284107.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/fork-in-a-circle-plate-logo-design-inspiration-vector-27284107" title="fork in a circle plate logo design inspiration vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/41/07/fork-in-a-circle-plate-logo-design-inspiration-vector-27284107.jpg" title="fork in a circle plate logo design inspiration" alt="fork in a circle plate logo design inspiration vector image"></noscript></a></li>
+						<li class="more"><div><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-similar-to_23204186" rel="nofollow"><span class="lrg">More Images…</span><span class="sml">More</span></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="group-artist" class="group">
+				<h6><span class="icon"></span><strong>More by <a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_halofandi" rel="nofollow">halofandi</a></strong></h6>
+
+				<div class="gallery large">
+					<ul>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/69/46/smile-restaurant-food-logo-design-inspiration-vector-23326946.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/smile-restaurant-food-logo-design-inspiration-vector-23326946" title="smile restaurant food logo design inspiration vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/69/46/smile-restaurant-food-logo-design-inspiration-vector-23326946.jpg" title="smile restaurant food logo design inspiration" alt="smile restaurant food logo design inspiration vector image"></noscript><img src="./logo_files/smile-restaurant-food-logo-design-inspiration-vector-23326946.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/56/76/bakery-line-vintage-logo-design-inspiration-vector-23395676.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/bakery-line-vintage-logo-design-inspiration-vector-23395676" title="bakery line vintage logo design inspiration vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/56/76/bakery-line-vintage-logo-design-inspiration-vector-23395676.jpg" title="bakery line vintage logo design inspiration" alt="bakery line vintage logo design inspiration vector image"></noscript><img src="./logo_files/bakery-line-vintage-logo-design-inspiration-vector-23395676.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/41/87/restaurant-logo-template-vector-23204187.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/restaurant-logo-template-vector-23204187" title="restaurant logo template vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/41/87/restaurant-logo-template-vector-23204187.jpg" title="restaurant logo template" alt="restaurant logo template vector image"></noscript><img src="./logo_files/restaurant-logo-template-vector-23204187.jpg"></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/48/88/chocolate-bakery-vintage-logo-design-inspiration-vector-23564888.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/chocolate-bakery-vintage-logo-design-inspiration-vector-23564888" title="chocolate bakery vintage logo design inspiration vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/48/88/chocolate-bakery-vintage-logo-design-inspiration-vector-23564888.jpg" title="chocolate bakery vintage logo design inspiration" alt="chocolate bakery vintage logo design inspiration vector image"></noscript><img src="./logo_files/chocolate-bakery-vintage-logo-design-inspiration-vector-23564888.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/56/77/bakery-vintage-logo-vector-23395677.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/bakery-vintage-logo-vector-23395677" title="bakery vintage logo vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/56/77/bakery-vintage-logo-vector-23395677.jpg" title="bakery vintage logo" alt="bakery vintage logo vector image"></noscript><img src="./logo_files/bakery-vintage-logo-vector-23395677.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/18/41/indian-food-flat-logo-design-template-in-brown-vector-23581841.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/indian-food-flat-logo-design-template-in-brown-vector-23581841" title="indian food flat logo design template in brown vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/18/41/indian-food-flat-logo-design-template-in-brown-vector-23581841.jpg" title="indian food flat logo design template in brown" alt="indian food flat logo design template in brown vector image"></noscript><img src="./logo_files/indian-food-flat-logo-design-template-in-brown-vector-23581841.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/48/87/chocolate-bakery-logo-design-inspiration-vector-23564887.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/chocolate-bakery-logo-design-inspiration-vector-23564887" title="chocolate bakery logo design inspiration vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/48/87/chocolate-bakery-logo-design-inspiration-vector-23564887.jpg" title="chocolate bakery logo design inspiration" alt="chocolate bakery logo design inspiration vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/47/57/japan-ramen-noodle-logo-design-inspiration-vector-23844757.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/japan-ramen-noodle-logo-design-inspiration-vector-23844757" title="japan ramen noodle logo design inspiration vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/47/57/japan-ramen-noodle-logo-design-inspiration-vector-23844757.jpg" title="japan ramen noodle logo design inspiration" alt="japan ramen noodle logo design inspiration vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/64/79/cupcake-logo-design-inspiration-vector-23396479.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/cupcake-logo-design-inspiration-vector-23396479" title="cupcake logo design inspiration vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/64/79/cupcake-logo-design-inspiration-vector-23396479.jpg" title="cupcake logo design inspiration" alt="cupcake logo design inspiration vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/03/34/coffee-shop-vintage-logo-design-inspiration-vector-23390334.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/coffee-shop-vintage-logo-design-inspiration-vector-23390334" title="coffee shop vintage logo design inspiration vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/03/34/coffee-shop-vintage-logo-design-inspiration-vector-23390334.jpg" title="coffee shop vintage logo design inspiration" alt="coffee shop vintage logo design inspiration vector image"></noscript></a></li>
+					</ul>
+				</div>
+				<div class="gallery small more">
+					<ul>
+						<li data-id="23390309" data-title="wheat organic vintage logo design inspiration" data-src="https://cdn5.vectorstock.com/i/thumbs/03/09/wheat-organic-vintage-logo-design-inspiration-vector-23390309.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/wheat-organic-vintage-logo-design-inspiration-vector-23390309" title="wheat organic vintage logo design inspiration vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/03/09/wheat-organic-vintage-logo-design-inspiration-vector-23390309.jpg" title="wheat organic vintage logo design inspiration" alt="wheat organic vintage logo design inspiration vector image vector image"></noscript><img src="./logo_files/wheat-organic-vintage-logo-design-inspiration-vector-23390309.jpg"></a></li>
+						<li data-id="23658706" data-title="burger cafe vintage logo design inspiration" data-src="https://cdn2.vectorstock.com/i/thumbs/87/06/burger-cafe-vintage-logo-design-inspiration-vector-23658706.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/burger-cafe-vintage-logo-design-inspiration-vector-23658706" title="burger cafe vintage logo design inspiration vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/87/06/burger-cafe-vintage-logo-design-inspiration-vector-23658706.jpg" title="burger cafe vintage logo design inspiration" alt="burger cafe vintage logo design inspiration vector image vector image"></noscript><img src="./logo_files/burger-cafe-vintage-logo-design-inspiration-vector-23658706.jpg"></a></li>
+						<li data-id="23204174" data-title="vintage skipjack mackarel tuna fishing logo" data-src="https://cdn5.vectorstock.com/i/thumbs/41/74/vintage-skipjack-mackarel-tuna-fishing-logo-vector-23204174.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/vintage-skipjack-mackarel-tuna-fishing-logo-vector-23204174" title="vintage skipjack mackarel tuna fishing logo vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/41/74/vintage-skipjack-mackarel-tuna-fishing-logo-vector-23204174.jpg" title="vintage skipjack mackarel tuna fishing logo" alt="vintage skipjack mackarel tuna fishing logo vector image vector image"></noscript><img src="./logo_files/vintage-skipjack-mackarel-tuna-fishing-logo-vector-23204174.jpg"></a></li>
+						<li data-id="23326940" data-title="green food logo design" data-src="https://cdn1.vectorstock.com/i/thumbs/69/40/green-food-logo-design-vector-23326940.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/green-food-logo-design-vector-23326940" title="green food logo design vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/69/40/green-food-logo-design-vector-23326940.jpg" title="green food logo design" alt="green food logo design vector image vector image"></noscript><img src="./logo_files/green-food-logo-design-vector-23326940.jpg"></a></li>
+						<li data-id="23585391" data-title="indian food logo design inspiration in red color" data-src="https://cdn2.vectorstock.com/i/thumbs/53/91/indian-food-logo-design-inspiration-in-red-color-vector-23585391.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/indian-food-logo-design-inspiration-in-red-color-vector-23585391" title="indian food logo design inspiration in red color vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/53/91/indian-food-logo-design-inspiration-in-red-color-vector-23585391.jpg" title="indian food logo design inspiration in red color" alt="indian food logo design inspiration in red color vector image vector image"></noscript><img src="./logo_files/indian-food-logo-design-inspiration-in-red-color-vector-23585391.jpg"></a></li>
+						<li data-id="23204175" data-title="vintage skipjack mackarel tuna fishing logo" data-src="https://cdn1.vectorstock.com/i/thumbs/41/75/vintage-skipjack-mackarel-tuna-fishing-logo-vector-23204175.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/vintage-skipjack-mackarel-tuna-fishing-logo-vector-23204175" title="vintage skipjack mackarel tuna fishing logo vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/41/75/vintage-skipjack-mackarel-tuna-fishing-logo-vector-23204175.jpg" title="vintage skipjack mackarel tuna fishing logo" alt="vintage skipjack mackarel tuna fishing logo vector image vector image"></noscript><img src="./logo_files/vintage-skipjack-mackarel-tuna-fishing-logo-vector-23204175.jpg"></a></li>
+						<li data-id="23390336" data-title="coffee shop vintage logo design inspiration" data-src="https://cdn2.vectorstock.com/i/thumbs/03/36/coffee-shop-vintage-logo-design-inspiration-vector-23390336.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/coffee-shop-vintage-logo-design-inspiration-vector-23390336" title="coffee shop vintage logo design inspiration vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/03/36/coffee-shop-vintage-logo-design-inspiration-vector-23390336.jpg" title="coffee shop vintage logo design inspiration" alt="coffee shop vintage logo design inspiration vector image vector image"></noscript><img src="./logo_files/coffee-shop-vintage-logo-design-inspiration-vector-23390336.jpg"></a></li>
+						<li data-id="23564885" data-title="butchery meat logo design inspiration" data-src="https://cdn1.vectorstock.com/i/thumbs/48/85/butchery-meat-logo-design-inspiration-vector-23564885.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/butchery-meat-logo-design-inspiration-vector-23564885" title="butchery meat logo design inspiration vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/48/85/butchery-meat-logo-design-inspiration-vector-23564885.jpg" title="butchery meat logo design inspiration" alt="butchery meat logo design inspiration vector image vector image"></noscript><img src="./logo_files/butchery-meat-logo-design-inspiration-vector-23564885.jpg"></a></li>
+						<li data-id="23581145" data-title="pizza vintage and love shape logo design" data-src="https://cdn1.vectorstock.com/i/thumbs/11/45/pizza-vintage-and-love-shape-logo-design-vector-23581145.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/pizza-vintage-and-love-shape-logo-design-vector-23581145" title="pizza vintage and love shape logo design vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/11/45/pizza-vintage-and-love-shape-logo-design-vector-23581145.jpg" title="pizza vintage and love shape logo design" alt="pizza vintage and love shape logo design vector image vector image"></noscript><img src="./logo_files/pizza-vintage-and-love-shape-logo-design-vector-23581145.jpg"></a></li>
+						<li data-id="23843009" data-title="coffee shop with love icon logo design inspiration" data-src="https://cdn5.vectorstock.com/i/thumbs/30/09/coffee-shop-with-love-icon-logo-design-inspiration-vector-23843009.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/coffee-shop-with-love-icon-logo-design-inspiration-vector-23843009" title="coffee shop with love icon logo design inspiration vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/30/09/coffee-shop-with-love-icon-logo-design-inspiration-vector-23843009.jpg" title="coffee shop with love icon logo design inspiration" alt="coffee shop with love icon logo design inspiration vector image vector image"></noscript><img src="./logo_files/coffee-shop-with-love-icon-logo-design-inspiration-vector-23843009.jpg"></a></li>
+						<li data-id="23564886" data-title="butchery meat logo design inspiration" data-src="https://cdn2.vectorstock.com/i/thumbs/48/86/butchery-meat-logo-design-inspiration-vector-23564886.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/butchery-meat-logo-design-inspiration-vector-23564886" title="butchery meat logo design inspiration vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/48/86/butchery-meat-logo-design-inspiration-vector-23564886.jpg" title="butchery meat logo design inspiration" alt="butchery meat logo design inspiration vector image vector image"></noscript><img src="./logo_files/butchery-meat-logo-design-inspiration-vector-23564886.jpg"></a></li>
+						<li data-id="23204161" data-title="love shape coffee shop logo design template" data-src="https://cdn2.vectorstock.com/i/thumbs/41/61/love-shape-coffee-shop-logo-design-template-vector-23204161.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/love-shape-coffee-shop-logo-design-template-vector-23204161" title="love shape coffee shop logo design template vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/41/61/love-shape-coffee-shop-logo-design-template-vector-23204161.jpg" title="love shape coffee shop logo design template" alt="love shape coffee shop logo design template vector image vector image"></noscript></a></li>
+						<li data-id="23204188" data-title="restaurant logo template" data-src="https://cdn4.vectorstock.com/i/thumbs/41/88/restaurant-logo-template-vector-23204188.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/restaurant-logo-template-vector-23204188" title="restaurant logo template vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/41/88/restaurant-logo-template-vector-23204188.jpg" title="restaurant logo template" alt="restaurant logo template vector image vector image"></noscript></a></li>
+						<li data-id="23581408" data-title="japaness ramen in circle shape logo design" data-src="https://cdn4.vectorstock.com/i/thumbs/14/08/japaness-ramen-in-circle-shape-logo-design-vector-23581408.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/japaness-ramen-in-circle-shape-logo-design-vector-23581408" title="japaness ramen in circle shape logo design vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/14/08/japaness-ramen-in-circle-shape-logo-design-vector-23581408.jpg" title="japaness ramen in circle shape logo design" alt="japaness ramen in circle shape logo design vector image vector image"></noscript></a></li>
+						<li data-id="23326481" data-title="bulb and restaurant idea food logo design" data-src="https://cdn2.vectorstock.com/i/thumbs/64/81/bulb-and-restaurant-idea-food-logo-design-vector-23326481.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/bulb-and-restaurant-idea-food-logo-design-vector-23326481" title="bulb and restaurant idea food logo design vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/64/81/bulb-and-restaurant-idea-food-logo-design-vector-23326481.jpg" title="bulb and restaurant idea food logo design" alt="bulb and restaurant idea food logo design vector image vector image"></noscript></a></li>
+						<li data-id="23658705" data-title="burger company vintage logo design inspiration" data-src="https://cdn1.vectorstock.com/i/thumbs/87/05/burger-company-vintage-logo-design-inspiration-vector-23658705.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/burger-company-vintage-logo-design-inspiration-vector-23658705" title="burger company vintage logo design inspiration vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/87/05/burger-company-vintage-logo-design-inspiration-vector-23658705.jpg" title="burger company vintage logo design inspiration" alt="burger company vintage logo design inspiration vector image vector image"></noscript></a></li>
+						<li data-id="23658707" data-title="burger house vintage logo design inspiration" data-src="https://cdn3.vectorstock.com/i/thumbs/87/07/burger-house-vintage-logo-design-inspiration-vector-23658707.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/burger-house-vintage-logo-design-inspiration-vector-23658707" title="burger house vintage logo design inspiration vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/87/07/burger-house-vintage-logo-design-inspiration-vector-23658707.jpg" title="burger house vintage logo design inspiration" alt="burger house vintage logo design inspiration vector image vector image"></noscript></a></li>
+						<li data-id="23658708" data-title="music burger vintage logo design inspiration" data-src="https://cdn4.vectorstock.com/i/thumbs/87/08/music-burger-vintage-logo-design-inspiration-vector-23658708.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/music-burger-vintage-logo-design-inspiration-vector-23658708" title="music burger vintage logo design inspiration vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/87/08/music-burger-vintage-logo-design-inspiration-vector-23658708.jpg" title="music burger vintage logo design inspiration" alt="music burger vintage logo design inspiration vector image vector image"></noscript></a></li>
+						<li data-id="23396881" data-title="chocolate chef logo design inspiration" data-src="https://cdn2.vectorstock.com/i/thumbs/68/81/chocolate-chef-logo-design-inspiration-vector-23396881.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/chocolate-chef-logo-design-inspiration-vector-23396881" title="chocolate chef logo design inspiration vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/68/81/chocolate-chef-logo-design-inspiration-vector-23396881.jpg" title="chocolate chef logo design inspiration" alt="chocolate chef logo design inspiration vector image vector image"></noscript></a></li>
+						<li data-id="23581409" data-title="ramen and love shaped logo design inspiration" data-src="https://cdn5.vectorstock.com/i/thumbs/14/09/ramen-and-love-shaped-logo-design-inspiration-vector-23581409.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/ramen-and-love-shaped-logo-design-inspiration-vector-23581409" title="ramen and love shaped logo design inspiration vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/14/09/ramen-and-love-shaped-logo-design-inspiration-vector-23581409.jpg" title="ramen and love shaped logo design inspiration" alt="ramen and love shaped logo design inspiration vector image vector image"></noscript></a></li>
+						<li class="more"><div><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_halofandi" rel="nofollow"><span class="lrg">More Images…</span><span class="sml">More</span></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="group-keywords" class="group">
+				<h6><span class="icon"></span><strong>Related Searches</strong></h6>
+				<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/restaurant-vectors">Restaurant</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/logo-vectors">Logo</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/food-vectors">Food</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/business-vectors">Business</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/template-vectors">Template</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/mr-vectors">Mr</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/symbol-vectors">Symbol</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/emblem-vectors">Emblem</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/sign-vectors">Sign</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/icon-vectors">Icon</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/fork-vectors">Fork</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/chef-vectors">Chef</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/graphic-vectors">Graphic</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/kitchen-vectors">Kitchen</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/concept-vectors">Concept</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/isolated-vectors">Isolated</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/vector-vectors">Vector</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/cook-vectors">Cook</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/logotype-vectors">Logotype</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/background-vectors">Background</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/illustration-vectors">Illustration</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/badge-vectors">Badge</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/menu-vectors">Menu</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/cafe-vectors">Cafe</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/dinner-vectors">Dinner</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/cooking-vectors">Cooking</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/drink-vectors">Drink</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/label-vectors">Label</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/element-vectors">Element</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/design-vectors">Design</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/dish-vectors">Dish</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/catering-vectors">Catering</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/vintage-vectors">Vintage</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/market-vectors">Market</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/product-vectors">Product</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/diet-vectors">Diet</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/brand-vectors">Brand</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/branding-vectors">Branding</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/retail-vectors">Retail</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/lunch-vectors">Lunch</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/good-vectors">Good</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/circle-vectors">Circle</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/breakfast-vectors">Breakfast</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/spoon-vectors">Spoon</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/banner-vectors">Banner</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/bar-vectors">Bar</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/service-vectors">Service</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/meal-vectors">Meal</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/shop-vectors">Shop</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/company-vectors">Company</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/finger-vectors">Finger</a></li>
+				</ul>
+			</div>
+		</section>
+	</article>
+
+	<!-- Footer -->
+	<footer>
+
+		<div>
+		<div class="column c1">
+			<nav class="company">
+				<h4>VectorStock</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/" title="Home">Home</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/free-vectors" title="Free Vectors">Free Vectors</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/royalty-free-vectors" title="All Royalty-Free Vectors">All Vectors</a></li>
+				</ul>
+				<ul>
+					<li><a href="https://www.vectorstock.com/what-is-a-vector" title="What is a Vector?">What is a Vector?</a></li>
+				</ul>
+				<ul>
+					<li class="sel"><a href="https://www.vectorstock.com/faq" title="Frequently Asked Questions"><span class="long">Frequently Asked Questions</span><span class="short">FAQs</span></a></li>
+					<li><a href="https://www.vectorstock.com/faq/members/terms-of-use" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/contact" title="Contact Us">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="column c2">
+			<nav class="account">
+					<h4><span class="title">Account</span><span class="icon"></span></h4>
+					<ul>
+						<li><a href="https://www.vectorstock.com/signup" title="Join Now">Join Now</a></li>
+						<li><a href="https://www.vectorstock.com/pricing" title="Pricing">Pricing</a></li>
+						<li><a href="https://www.vectorstock.com/?signup=1&amp;contributor=1" title="Contributor Sign Up">Contributor Sign Up</a></li>
+						<li><a href="https://www.vectorstock.com/faq/artists/why-sell-at-vectorstock" title="Contributor FAQ">Contributor FAQ</a></li>
+					</ul>
+			</nav>
+		</div>
+		<div class="column c3">
+			<nav class="social">
+				<h4>Social</h4>
+				<ul>
+					<li class="facebook sel"><a href="https://www.facebook.com/VectorStock" target="_blank" rel="noreferrer"><span class="title">Facebook</span><span class="icon"></span></a></li>
+					<li class="pinterest sel"><a href="https://pinterest.com/vectorstock/" target="_blank" rel="noreferrer"><span class="title">Pinterest</span><span class="icon"></span></a></li>
+					<li class="twitter sel"><a href="https://twitter.com/VectorStock" target="_blank" rel="noreferrer"><span class="title">Twitter</span><span class="icon"></span></a></li>
+				</ul>
+			</nav>
+			<div class="signoff">
+				<h5><a href="https://www.vectorstock.com/" title="VectorStock®">VectorStock®</a></h5>
+				<p>VectorStock and the VectorStock logo are registered trademarks of VectorStock Media.<br>
+				© 2021. <span>All Rights Reserved.</span></p>
+			</div>
+		</div>
+	</div></footer>
+
+
+	<script src="./logo_files/f.txt"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"02e09611df","applicationID":"156179534","transactionName":"ZV0ENRYCC0RYAkVbDVwXJRQXFwpaFhNeSwNeTB9MAhEAUhQXVFEWXUpJFw0GEg==","queueTime":0,"applicationTime":48,"atts":"SRoHQ14YGEo=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+
+
+<iframe src="./logo_files/payframe.html" height="0" width="0" allowpaymentrequest="true" style="display: none; visibility: hidden;"></iframe><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="./logo_files/bframe.html" name="c-395ikksi7goc" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div><iframe width="1" id="braintreeDataFrame-a5ae78f733197244c11d31c549f68983" height="1" frameborder="0" scrolling="no" title="Braintree-Kount-iframe" aria-hidden="true" style="position: fixed; left: -999999px; top: -999999px;" src="./logo_files/logo.html"><img src="https://assets.braintreegateway.com/data/logo.gif?m=null&s=a5ae78f733197244c11d31c549f68983" alt="" /></iframe><script type="application/json" fncls="fnparams-dede7cc5-15fd-4c75-a9f4-36c430ee3a99">{"f":"dab42e8bf87c2b849f4a16cf1f3db29e","s":"BRAINTREE_SIGNIN","b":"https://b.stats.paypal.com/counter.cgi?i=127.0.0.1&p=dab42e8bf87c2b849f4a16cf1f3db29e&t=1611469656.797&a=14"}</script><iframe src="./logo_files/saved_resource.html" title="pbf" aria-hidden="true" style="width: 0px; height: 0px; border: 0px; position: absolute; z-index: -999; top: -10000px; left: -10000px;"></iframe><iframe title="ppfniframe" src="./logo_files/i.html" aria-hidden="true" style="width: 0px; height: 0px; border: 0px; position: absolute; z-index: -999; top: -10000px; left: -10000px;"></iframe></body></html>
